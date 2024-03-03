@@ -1,0 +1,43 @@
+<html>
+
+
+
+<body style='background:red'>
+<form method='post'>
+{%csrf_token%}
+{%for x in hap1%}
+<p><a href='{{x.load.url}}' download='{{x.load.url}}'>download wish by joe b</a></p>
+{%endfor%}
+<br>
+{%for x1 in hap2%}
+<p><a href='{{x1.load.url}}' download='{{x1.load.url}}'>download wish beat by joe b</a></p>
+{%endfor%}
+
+<br>
+{%for x2 in hap3%}
+<p><a href='{{x2.load.url}}' download='{{x2.load.url}}'>download lonely by asake</a></p>
+{%endfor%}
+
+
+<br>
+
+{%for x3 in hap4%}
+<p><a href='{{x3.load.url}}' download='{{x3.load.url}}'> download vengence by guc</a></p>
+{%endfor%}
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+
+
+
+
+
+</html>
